@@ -57,8 +57,8 @@ public class InstanceClassification {
 
     private static void classifyInstance(J48 logistic, Instance instance) throws Exception {
         HashMap<Integer, DiagnosisClass> diagnosisMap = new HashMap<>();
-        diagnosisMap.put(0, DiagnosisClass.NO_RECURRENCE_EVENTS);
-        diagnosisMap.put(1, DiagnosisClass.RECURRENCE_EVENTS);
+        diagnosisMap.put(0, DiagnosisClass.RECURRENCE_EVENTS);
+        diagnosisMap.put(1, DiagnosisClass.NO_RECURRENCE_EVENTS);
 
         System.out.println();
         System.out.print("DIAGNOSIS: ");
