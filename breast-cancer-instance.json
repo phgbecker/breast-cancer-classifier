@@ -1,0 +1,11 @@
+{
+  "age": "AGE_30_39",
+  "menopause": "LT40",
+  "tumorSize": "SIZE_0_4",
+  "invNodes": "NODES_6_8",
+  "nodeCaps": "YES",
+  "degMalig": "ONE",
+  "breast": "LEFT",
+  "breastQuad": "CENTRAL",
+  "irradiat": "NO"
+}
