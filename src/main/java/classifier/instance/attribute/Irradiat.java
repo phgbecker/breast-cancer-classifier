@@ -1,15 +1,15 @@
-package diagnosis.attribute;
+package classifier.instance.attribute;
 
 import lombok.Getter;
 
 @Getter
-public enum NodeCaps {
+public enum Irradiat {
     YES("yes"),
     NO("no");
 
     private final String value;
 
-    NodeCaps(String value) {
+    Irradiat(String value) {
         this.value = value;
     }
 }

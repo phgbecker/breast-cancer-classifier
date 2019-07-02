@@ -1,5 +1,6 @@
-package diagnosis;
+package classifier;
 
+import classifier.model.ClassifierModel;
 import org.junit.Test;
 import weka.classifiers.trees.J48;
 import weka.core.Instances;
@@ -20,7 +21,7 @@ public class ClassifierModelTest {
     @Test
     public void givenFileName_whenloadDataSetFromArff_thenIsInstanceOfInstances() throws IOException {
         assertThat(
-                new ClassifierModel<>().loadDataSetFromArff("breast-cancer.arff")
+                ClassifierModel.loadDataSetFromArff("breast-cancer.arff")
         ).isInstanceOf(Instances.class);
     }
 }

@@ -1,4 +1,4 @@
-package diagnosis;
+package classifier.model;
 
 import weka.classifiers.AbstractClassifier;
 import weka.core.Instances;
@@ -17,7 +17,7 @@ public class ClassifierModel<T extends AbstractClassifier> {
         }
     }
 
-    public Instances loadDataSetFromArff(String fileName) throws IOException {
+    public static Instances loadDataSetFromArff(String fileName) throws IOException {
         ArffLoader arffLoader = new ArffLoader();
         arffLoader.setSource(new File(fileName));
 
